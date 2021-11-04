@@ -1,0 +1,120 @@
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.banner {
+  
+  margin-top: 450px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  /* height: 20%; */
+  align-self: center;
+  padding: 8px;
+}
+
+
+.congrats {
+    
+    font-size: 45px;
+    /* border: 1px solid black;
+    box-shadow: 4px 4px 2px black; */
+    padding: 5px 10px;
+    color: #0B295F;
+    /* margin-top: 250px; */
+    margin-bottom: 70px;
+    font-weight: 500;
+}
+
+.mark {
+  line-height: 40px;
+  font-size: 30px;
+  color: #6B778C;
+  font-weight: 500;
+  padding: 5px 10px;
+
+}
+
+.final-score {
+    font-size: 45px;
+    padding: 5px 10px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 0;
+    color: #0B295F;
+}
+
+.button1{
+    /* display: flex; */
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    padding: 5px 10px;
+}
+
+.button2{
+  /* display: flex; */
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.final-buttons {
+    padding: 20px;
+    width: 100%;
+    flex: 0.8;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .result {
+      align-items: center;
+  }
+
+  .banner {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    margin-top: 300px;
+  }
+  .congrats {
+    font-size: 30px;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+  }
+
+  .mark{
+    font-size: 20px;
+  }
+  .final-score{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .final-buttons{
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner{
+    height: 60px;
+  }
+  .congrats{
+  font-size: 23px;
+  }
+  .mark{
+  font-size: 15px;
+  }
+  .final-score{
+    font-size: 19px;
+  }
+  .final-buttons{
+    width: 70%;
+  }
+}

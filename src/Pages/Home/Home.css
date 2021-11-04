@@ -1,0 +1,124 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  
+  .settings {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  .quiz-hub {
+    color: #2F80ED;
+    font-weight: 400;
+    text-decoration: underline;
+    
+  }
+
+  .description{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .banner1 {
+    width: 40%;
+    align-self: center;
+    padding: 8px;
+  }
+  .start-button{
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 45px;
+    background-color: #2F80ED;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .start-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .start-button span::after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+  }
+  .start-button:hover span{
+    padding-right: 25px;
+  }
+  .start-button:hover span:after{
+    opacity: 1;
+    right: 0;
+  }
+  .start-button:hover{
+      background-color: #3a86ff;
+  }
+  .settings__select {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    width: 75%;
+    flex: 0.8;
+    justify-content: space-evenly;
+    
+  }
+  
+  @media (max-width: 900px) {
+    .content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .banner1 {
+      width: 50%;
+      padding: 0;
+    }
+    .settings {
+      width: 100%;
+    }
+    .description{
+      width: 70%;
+    }
+    .header{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .banner1 {
+      width: 40%;
+      padding: 0;
+    }
+    .settings__select {
+      width: 80%;
+      font-size: 12px;
+    }
+    .start-button{
+      padding: 15px 30px;
+    }
+    .start-button span{
+      font-size: 15px;
+    }
+  }
